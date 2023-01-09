@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CPSC 332 - Project 1</title>
+	<link href="./dist/output.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container"> 
+  <header>
+    <div class="navbar">
+		<a href="http://ecs.fullerton.edu/~cs332f26" class="btn btn-ghost normal-case text-xl bg-cyan-400">HOME</a>
+	</div>
+  </header>
+  <section class="title" id="title">
+    <h2 class="title_header text-6xl text-center py-2 pl-3">CSUF Database</h2>
+    <h2 class="tagline text-2xl antialiased py-2 pl-7">Professors and Students Information</p>
+  </section>
+  
+  <section class="input" id="input">
+	<h2 class="input_header1 text-2xl antialiased py-2 pl-2 pt-16">Professors:</h2>
+	  
+    <div class="">
+		<form action="./professors_SSN.php" method="post">
+			<label class="input-group py-4">
+		 		<span>Social Security Number</span>
+				<input class="input input-bordered w-full max-w-xs" type="text" name = "SSN" placeholder="Please input 9 digit SSN" required minlength="9"></p>
+			</label>
+		  	<input class="button btn" type="submit" value="submit">
+		</form>
+
+		<form action="./student_grades.php" method="post">
+			<label class="input-group py-4">
+				<span>Course Number</span>
+				<input class="input input-bordered w-full max-w-xs" type="text" name = "CNO" placeholder="e.g MATH 150A" required></p>
+			</label>
+
+			<label class="input-group py-4">
+		  		<span>Section Number</span>
+		  		<input class="input input-bordered w-full max-w-xs" type="text" name = "SNO" placeholder="Please input Section #" required></p>
+			</label>
+			<input class="button btn" type="submit" value="submit">
+		</form>
+	</div>
+	  
+	<h2 class="input_header2 text-2xl antialiased py-2 pl-2 pt-20">Students:</h2>
+	  
+	<div class="input_data2">
+		<form action="./courselist.php" method="post">
+			<label class="input-group py-4">
+				<span>Course Number</span>
+				<input class="input input-bordered w-full max-w-xs" type="text" name = "CNO" placeholder="e.g MATH 150A" required></p>
+			</label>
+			<input class="button btn" type="submit" value="submit"> 
+		</form>	
+		<form action="./transcript.php" method="post"> 
+			<label class="input-group py-4">
+				<span>Campus Wide ID<span>
+				<input class="input input-bordered w-full max-w-xs" type="text" name = "CWID" placeholder="Please input Campus Wide ID" required></p>
+			</label>
+			<input class="button btn" type="submit" value="submit"> 
+		</form>	 
+	</div>
+  </section>
+</div>
+</body>
+</html>
