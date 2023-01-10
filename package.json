@@ -1,0 +1,28 @@
+{
+  "name": "cpsc332",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "serve": "php -S localhost:3000",
+    "start": "npm-run-all --parallel serve tailwind"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmorales01/CPSC332.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmorales01/CPSC332/issues"
+  },
+  "homepage": "https://github.com/pmorales01/CPSC332#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "daisyui": "^2.46.1"
+  }
+}

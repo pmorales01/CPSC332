@@ -2296,24 +2296,16 @@ html {
   padding-left: 0.75rem;
 }
 
-.pl-6 {
-  padding-left: 1.5rem;
-}
-
 .pl-7 {
   padding-left: 1.75rem;
 }
 
-.pb-16 {
-  padding-bottom: 4rem;
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .pt-16 {
   padding-top: 4rem;
-}
-
-.pl-2 {
-  padding-left: 0.5rem;
 }
 
 .pt-20 {

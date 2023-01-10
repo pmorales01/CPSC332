@@ -1,3 +1,5 @@
+<?php include ('./DB_Credentials.php'); ?>
+
 <html>
 <head>
 	<title>CPSC 332 - Project 1</title>
@@ -7,17 +9,19 @@
 <body>
     <header>
         <div class="navbar">
-            <a href="http://ecs.fullerton.edu/~cs332f26" class="btn btn-ghost normal-case text-xl bg-cyan-400">HOME</a>
+            <a href ="/" class="btn btn-ghost normal-case text-xl bg-cyan-400">HOME</a>
         </div>
     </header>
     <?php   
         $SSN = $_POST['SSN'];
-        $dbServername = "mariadb";
-        $dbUsername = "cs332f26";
-        $dbPassword = "6Kqjr0YR";
-        $dbName = "cs332f26";
+        
+        $dbServername = "localhost";
+        $dbUsername = getenv('dbUsername');
+        $dbPassword = getenv('dbPassword');
+        $dbName = getenv('dbName');
+    
 
-        // set connection
+        // set connectioni
         $con= mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
 
         //check connection
