@@ -4,7 +4,7 @@
 
 ## Clone the Repository
 ```
-git clone
+git clone https://github.com/pmorales01/CPSC332.git
 cd CPSC332
 ```
 
